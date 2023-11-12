@@ -1,0 +1,301 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Raleway', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway]
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl
+  }
+
+  li {
+    @apply cursor-pointer
+  }
+
+  button {
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
+  }
+  .rainbow-name {
+    display: inline-block;
+    color: transparent;
+    background: 
+     linear-gradient(45deg, rgba(255,0,0,1) 0%,       /* Red */
+     rgba(255,13,0,1) 1%, 
+     rgba(255,26,0,1) 2%, 
+     rgba(255,38,0,1) 3%, 
+     rgba(255,51,0,1) 4%, 
+     rgba(255,64,0,1) 5%, 
+     rgba(255,77,0,1) 6%, 
+     rgba(255,90,0,1) 7%, 
+     rgba(255,102,0,1) 8%, 
+     rgba(255,115,0,1) 9%, 
+     rgba(255,128,0,1) 10%, 
+     rgba(255,141,0,1) 11%, 
+     rgba(255,153,0,1) 12%, 
+     rgba(255,166,0,1) 13%, 
+     rgba(255,179,0,1) 14%, 
+     rgba(255,192,0,1) 15%, 
+     rgba(255,204,0,1) 16%, 
+     rgba(255,217,0,1) 17%, 
+     rgba(255,230,0,1) 18%, 
+     rgba(255,243,0,1) 19%, 
+     rgba(255,255,0,1) 20%,    /* Yellow */
+     rgba(230,255,0,1) 21%, 
+     rgba(204,255,0,1) 22%, 
+     rgba(179,255,0,1) 23%, 
+     rgba(153,255,0,1) 24%, 
+     rgba(128,255,0,1) 25%, 
+     rgba(102,255,0,1) 26%, 
+     rgba(77,255,0,1) 27%, 
+     rgba(51,255,0,1) 28%, 
+     rgba(26,255,0,1) 29%, 
+     rgba(0,255,0,1) 30%,      /* Green */
+     rgba(0,255,26,1) 31%, 
+     rgba(0,255,51,1) 32%, 
+     rgba(0,255,77,1) 33%, 
+     rgba(0,255,102,1) 34%, 
+     rgba(0,255,128,1) 35%, 
+     rgba(0,255,153,1) 36%, 
+     rgba(0,255,179,1) 37%, 
+     rgba(0,255,204,1) 38%, 
+     rgba(0,255,230,1) 39%, 
+     rgba(0,255,255,1) 40%,    /* Cyan */
+     rgba(0,230,255,1) 41%, 
+     rgba(0,204,255,1) 42%, 
+     rgba(0,179,255,1) 43%, 
+     rgba(0,153,255,1) 44%, 
+     rgba(0,128,255,1) 45%, 
+     rgba(0,102,255,1) 46%, 
+     rgba(0,77,255,1) 47%, 
+     rgba(0,51,255,1) 48%, 
+     rgba(0,26,255,1) 49%, 
+     rgba(0,0,255,1) 50%,      /* Blue */
+     rgba(26,0,255,1) 51%, 
+     rgba(51,0,255,1) 52%, 
+     rgba(77,0,255,1) 53%, 
+     rgba(102,0,255,1) 54%, 
+     rgba(128,0,255,1) 55%, 
+     rgba(153,0,255,1) 56%, 
+     rgba(179,0,255,1) 57%, 
+     rgba(204,0,255,1) 58%, 
+     rgba(230,0,255,1) 59%, 
+     rgba(255,0,255,1) 60%,    /* Violet */
+     rgba(255,0,230,1) 61%, 
+     rgba(255,0,204,1) 62%, 
+     rgba(255,0,179,1) 63%, 
+     rgba(255,0,153,1) 64%, 
+     rgba(255,0,128,1) 65%, 
+     rgba(255,0,102,1) 66%, 
+     rgba(255,0,77,1) 67%, 
+     rgba(255,0,51,1) 68%, 
+     rgba(255,0,26,1) 69%, 
+     rgba(255,0,0,1) 70%, 
+     rgba(255,0,0,1) 70%,      /* Red */
+        rgba(255,13,13,1) 71%, 
+        rgba(255,26,26,1) 72%, 
+        rgba(255,38,38,1) 73%, 
+        rgba(255,51,51,1) 74%, 
+        rgba(255,64,64,1) 75%, 
+        rgba(255,77,77,1) 76%, 
+        rgba(255,90,90,1) 77%, 
+        rgba(255,102,102,1) 78%, 
+        rgba(255,115,115,1) 79%, 
+        rgba(255,128,128,1) 80%, 
+        rgba(255,141,141,1) 81%, 
+        rgba(255,153,153,1) 82%, 
+        rgba(255,166,166,1) 83%, 
+        rgba(255,179,179,1) 84%, 
+        rgba(255,192,192,1) 85%, 
+        rgba(255,204,204,1) 86%, 
+        rgba(255,217,217,1) 87%, 
+        rgba(255,230,230,1) 88%, 
+        rgba(255,243,243,1) 89%, 
+        rgba(255,255,255,1) 90%,   /* White */
+        rgba(255,243,243,1) 91%, 
+        rgba(255,230,230,1) 92%, 
+        rgba(255,217,217,1) 93%, 
+        rgba(255,204,204,1) 94%, 
+        rgba(255,192,192,1) 95%, 
+        rgba(255,179,179,1) 96%, 
+        rgba(255,166,166,1) 97%, 
+        rgba(255,153,153,1) 98%, 
+        rgba(255,141,141,1) 99%, 
+        
+       
+    ) 0 0/100% 200%;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: rainbowSlide 2s linear infinite;
+  }
+  
+  @keyframes rainbowSlide {
+    to { background-position: 0 -200%; }
+  }
+ 
+.rainbow-name {
+    color: #509beb;
+    display: inline-block;
+    transition: background 0.2s, color 0.2s; 
+}
+
+.rainbow-name:hover {
+    color: transparent;
+    background: 
+     linear-gradient(45deg, rgba(255,0,0,1) 0%,       /* Red */
+     rgba(255,13,0,1) 1%, 
+     rgba(255,26,0,1) 2%, 
+     rgba(255,38,0,1) 3%, 
+     rgba(255,51,0,1) 4%, 
+     rgba(255,64,0,1) 5%, 
+     rgba(255,77,0,1) 6%, 
+     rgba(255,90,0,1) 7%, 
+     rgba(255,102,0,1) 8%, 
+     rgba(255,115,0,1) 9%, 
+     rgba(255,128,0,1) 10%, 
+     rgba(255,141,0,1) 11%, 
+     rgba(255,153,0,1) 12%, 
+     rgba(255,166,0,1) 13%, 
+     rgba(255,179,0,1) 14%, 
+     rgba(255,192,0,1) 15%, 
+     rgba(255,204,0,1) 16%, 
+     rgba(255,217,0,1) 17%, 
+     rgba(255,230,0,1) 18%, 
+     rgba(255,243,0,1) 19%, 
+     rgba(255,255,0,1) 20%,    /* Yellow */
+     rgba(230,255,0,1) 21%, 
+     rgba(204,255,0,1) 22%, 
+     rgba(179,255,0,1) 23%, 
+     rgba(153,255,0,1) 24%, 
+     rgba(128,255,0,1) 25%, 
+     rgba(102,255,0,1) 26%, 
+     rgba(77,255,0,1) 27%, 
+     rgba(51,255,0,1) 28%, 
+     rgba(26,255,0,1) 29%, 
+     rgba(0,255,0,1) 30%,      /* Green */
+     rgba(0,255,26,1) 31%, 
+     rgba(0,255,51,1) 32%, 
+     rgba(0,255,77,1) 33%, 
+     rgba(0,255,102,1) 34%, 
+     rgba(0,255,128,1) 35%, 
+     rgba(0,255,153,1) 36%, 
+     rgba(0,255,179,1) 37%, 
+     rgba(0,255,204,1) 38%, 
+     rgba(0,255,230,1) 39%, 
+     rgba(0,255,255,1) 40%,    /* Cyan */
+     rgba(0,230,255,1) 41%, 
+     rgba(0,204,255,1) 42%, 
+     rgba(0,179,255,1) 43%, 
+     rgba(0,153,255,1) 44%, 
+     rgba(0,128,255,1) 45%, 
+     rgba(0,102,255,1) 46%, 
+     rgba(0,77,255,1) 47%, 
+     rgba(0,51,255,1) 48%, 
+     rgba(0,26,255,1) 49%, 
+     rgba(0,0,255,1) 50%,      /* Blue */
+     rgba(26,0,255,1) 51%, 
+     rgba(51,0,255,1) 52%, 
+     rgba(77,0,255,1) 53%, 
+     rgba(102,0,255,1) 54%, 
+     rgba(128,0,255,1) 55%, 
+     rgba(153,0,255,1) 56%, 
+     rgba(179,0,255,1) 57%, 
+     rgba(204,0,255,1) 58%, 
+     rgba(230,0,255,1) 59%, 
+     rgba(255,0,255,1) 60%,    /* Violet */
+     rgba(255,0,230,1) 61%, 
+     rgba(255,0,204,1) 62%, 
+     rgba(255,0,179,1) 63%, 
+     rgba(255,0,153,1) 64%, 
+     rgba(255,0,128,1) 65%, 
+     rgba(255,0,102,1) 66%, 
+     rgba(255,0,77,1) 67%, 
+     rgba(255,0,51,1) 68%, 
+     rgba(255,0,26,1) 69%, 
+     rgba(255,0,0,1) 70%, 
+     rgba(255,0,0,1) 70%,      /* Red */
+     rgba(255,13,13,1) 71%, 
+     rgba(255,26,26,1) 72%, 
+     rgba(255,38,38,1) 73%, 
+     rgba(255,51,51,1) 74%, 
+     rgba(255,64,64,1) 75%, 
+     rgba(255,77,77,1) 76%, 
+     rgba(255,90,90,1) 77%, 
+     rgba(255,102,102,1) 78%, 
+     rgba(255,115,115,1) 79%, 
+     rgba(255,128,128,1) 80%, 
+     rgba(255,141,141,1) 81%, 
+     rgba(255,153,153,1) 82%, 
+     rgba(255,166,166,1) 83%, 
+     rgba(255,179,179,1) 84%, 
+     rgba(255,192,192,1) 85%, 
+     rgba(255,204,204,1) 86%, 
+     rgba(255,217,217,1) 87%, 
+     rgba(255,230,230,1) 88%, 
+     rgba(255,243,243,1) 89%, 
+     rgba(255,255,255,1) 90%,   /* White */
+     rgba(255,243,243,1) 91%, 
+     rgba(255,230,230,1) 92%, 
+     rgba(255,217,217,1) 93%, 
+     rgba(255,204,204,1) 94%, 
+     rgba(255,192,192,1) 95%, 
+     rgba(255,179,179,1) 96%, 
+     rgba(255,166,166,1) 97%, 
+     rgba(255,153,153,1) 98%, 
+     rgba(255,141,141,1) 99%, 
+     rgba(255,128,128,1) 100% 
+ ) 0 0/100% 200%;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: rainbowSlide 2s linear infinite;
+}
+
+@keyframes rainbowSlide {
+    to { background-position: 0 -200%; }
+}
+[data-theme="dark"] {
+  /* dark theme styles here */
+  background-color: #222;
+  color: #ddd;
+  /* and other dark theme styles... */
+}
+/* Main.css */
+.link-button {
+  display: inline-block;
+  width: auto; /* Set the width to auto to fit the content */
+  transition: transform 0.3s ease;
+}
+
+.square-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.link-button:hover .square-button {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+}
